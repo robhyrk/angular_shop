@@ -1,0 +1,28 @@
+<div class='row loginPage'>		
+		<div class="twelve columns">
+		<h1>
+			Add product
+		</h1>
+		<div class="row">
+			<div class="twelve columns">
+				<form ng-submit="Ctrl.addProduct(name,description,image,price,category,quantity,status)">
+					<input type="text" ng-model="name" placeholder="name">
+					<input type="text" ng-model="image" placeholder="image url">
+					<textarea ng-model="description" placeholder="description"></textarea>
+					<input type="text" ng-model="price" placeholder="price">
+					<input type="text" ng-model="category" placeholder="category">
+					<input type="text" ng-model="quantity" placeholder="quantity">
+					<select ng-model="status">
+							<option value="" selected>Status</option>
+							<option value="active">Active</option>
+							<option value="inactive">Inactive</option>
+					</select>
+					<div class='row'>
+						<button class="six columns">Add Product</button>
+						<button class="six columns" ng-click="Ctrl.productService.getProducts()">Get Product</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>

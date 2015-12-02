@@ -1,0 +1,64 @@
+<!-- Checkout Header -->
+<section class="checkout">
+    <div class="container">
+        <div class="row">
+            <h2 class="twelve columns block">Checkout</h2>
+        </div>
+    </div>
+    <!-- Product Checkout Details -->
+    <!-- Image Container -->
+    <div class="container">
+        <div class="twelve columns">
+            <div class="row content">
+                <div class="nine columns">
+                    <table class="table-products u-full-width">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th></th>
+                                <th>Product</th>
+                                <th>Category</th>
+                                <th>Quantity</th>
+                                <th>Price</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr ng-repeat="product in Ctrl.Cart">
+                                <td class="remove" ng-click="Ctrl.removeProduct(product)"><a class="remove-product">x</a></td>
+                                <td><img ng-src="{{product.image}}"></td>
+                                <td>{{product.name}}</td>
+                                <td>{{product.category}}</td>
+                                <td>
+                                    <input class="quantity-input" type='number' ng-model="product.orderQuantity" ng-change="Ctrl.updateCart(product.productId, product.orderQuantity)" ng-disabled="product.orderQuantity >= Ctrl.product.quantity">
+                                </td>
+                                <td>{{product.price * product.orderQuantity | currency: "$"}}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="three columns">
+                    <table class="table-total u-full-width">
+                        <!--                 <thead>
+                    <tr><th>Cart Total</th></tr>
+                </thead> -->
+                        <tbody>
+                            <tr>
+                                <th>Subtotal</th>
+                                <td>{{Ctrl.subtotal | currency: "$"}}</td>
+                            </tr>
+                            <tr>
+                                <th>Tax</th>
+                                <td>{{Ctrl.tax | currency: "$"}}</td>
+                            </tr>
+                            <tr>
+                                <th>Total</th>
+                                <td>{{Ctrl.total | currency: "$"}}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <button class="button button-primary twelve columns" ng-click="Ctrl.gotoConfirmation()">Proceed To Checkout</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

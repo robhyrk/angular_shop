@@ -1,0 +1,204 @@
+  .confirmation h2 {
+    display: block;
+    font-size: .85em;
+  }
+  .loginPage form, .adminPage form, .editProducts form {
+    margin-top: 50px;
+  }
+  .loginPage, .adminPage, .editProducts {
+    width: 85%;
+    margin: 0 auto;
+  }
+  .loginPage h2, .adminPage h2, .editProducts h2 {
+    display: block;
+    font-size: .85em;
+  }
+  .loginPage h1, .adminPage h1, .editProducts h1 {
+    display: block;
+    font-size: 1em;
+    background: #F2C875;
+    font-family: 'Montserrat', sans-serif;
+    padding-left: 15px;
+    margin-top: 50px;
+    margin-bottom: 5px !important;
+  }
+  .rowMargin {
+    padding-top: 10px;
+    margin-top: 20px;
+  }
+  .editProducts {
+    margin: 0 auto;
+    padding-top: 10px;
+  }
+  .loginPage input, .adminPage input, .editProducts input  {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    bottom: 15px;
+  }
+  .loginPage button, .adminPage li, .editProducts button {
+    width: 100%;
+    background: #CC7809;
+    font-size: 1.25em;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+  }
+  .loginPage button:hover {
+    width: 100%;
+    background: #753616;
+    font-size: 1.5em;
+    color: white;
+    font-family: 'Satisfy', sans-serif;
+  }
+  .adminPage .u-full-width th{
+    background: #FFF5B0;
+    font-size: 1.5em;
+    color: #CC7809;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-transform: lowercase;
+    margin-left: 30px;
+    text-align: center;
+  }
+  .adminPage li:hover  {
+    background: #753616;
+    font-size: 1.5em;
+    color: white;
+    font-family: 'Satisfy', sans-serif;
+    text-transform: lowercase;
+  }
+  .productsCtrlImg {
+    height: 70px;
+    margin: 0 auto;
+    margin-left: 20px;
+  }
+  .productsCtrlTxt {
+    font-family: 'Source Sans Pro', sans-serif;
+    height: 70px;
+    margin: 0 auto;
+    margin-left: 20px;
+    vertical-align: top;
+  }
+  .productsCtrlcentre {
+    color: #0CC8F4;
+    text-align: center !important;
+  }
+  .adminPage strong {
+  font-size: 2em;
+  color: #753616;
+  border-bottom: 1px solid #F2C875;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  padding-bottom: 5px;
+  font-family: 'Montserrat', sans-serif;
+}
+  .productNaDes {
+    background-color: rgb(247,247,245);
+    padding: 20px;
+  }
+  .confirmation .columns {
+  background: rgba(249, 247, 220, 0.25);
+  }
+  .orderConfirmation h2{
+    margin-bottom: 5px;
+  }
+  .confirmation input {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    bottom: 15px;
+  }
+  .confirmation h1 {
+    display: block;
+    font-size: 1em;
+    background: #F2C875;
+    font-family: 'Montserrat', sans-serif;
+    padding-left: 15px;
+  }
+  .confirmation form {
+    margin-top: 50px;
+  }
+  .confirmation .row {
+    border: 2px;
+  }
+  .confirmation button {
+    width: 100%;
+    background: #CC7809;
+    font-size: 1.25em;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+  }
+  .confirmation button:hover {
+    width: 100%;
+    background: #753616;
+    font-size: 1.5em;
+    color: white;
+    font-family: 'Satisfy', sans-serif;
+  }
+  .savioImage {
+    margin-top: 60px;
+  }
+  .savioWidth #name {
+    background: rgba(249, 247, 220, 0.50);
+    padding-top: 20px;
+  }
+  .fitMargin {
+    padding-left: 30px;
+    margin: 0;
+    background: rgba(249, 247, 220, 0.25);
+  }
+  .pictureCart{
+    height: 150px;
+    width: 150px;
+  }
+    #quantity input {
+    width: 50%;
+    padding-left: 20px;
+  }
+  button .svgCart {
+    height: 100px;
+    width: 100px;
+    padding: 0;
+
+  }
+  .savioWidth button {
+    position: relative;
+    bottom: 100px;
+    border: none;
+    background: none;
+  }
+  #div1  {
+    background: url(../img/lav_feild.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+  }
+  .savioWidth #input_quantity h2{
+    margin-bottom: 5px;
+  }
+  .plusMoins {
+    margin-bottom: 0px;
+    background-color: none;
+    font-size: 2em;
+    font-family: Arial;
+    width: 40px !important;
+    height:40px !important;
+    color: #696969;
+    border: none;
+
+  }
+  #plus, #moins {
+    background: rgba(238,232,170, 0.5);
+    margin-bottom: 0;
+    border: none;
+    font-family: Arial;
+    font-size: 3em;
+    color: silver;
+    width: 20px !important;
+  }
+
+  #plus:hover, #moins:hover {
+    background: rgba(112,128,144, 0.8);
+    font-size: 2em;
+    color: #E6E6FA ;
+  }

@@ -1,0 +1,47 @@
+<div class='row editProducts'>
+	<div>
+		<h1>
+			Edit Product
+		</h1>
+	</div>
+	<div class="row rowMargin">
+		<div class="three columns" >
+			<input type="text" ng-model="Ctrl.editProduct.name" placeholder="name">
+		</div>
+		<div class="three columns" >
+			<input type="text" ng-model="Ctrl.editProduct.price" placeholder="price">
+		</div>
+		<div class="three columns" >
+			<input type="text" ng-model="Ctrl.editProduct.category" placeholder="category">
+		</div>
+		<div class="three columns" >
+			<input type="text" ng-model="Ctrl.editProduct.quantity" placeholder="quantity">
+		</div>
+
+	</div>
+		
+		<textarea class='twelve columns' ng-model="Ctrl.editProduct.description" placeholder="description"></textarea>
+		<input class="twelve columns" type="text" ng-model="Ctrl.editProduct.image" placeholder="image url">
+		<div class='twelve columns'>
+			<form ng-submit="Ctrl.findEditProduct(productID)">
+				<input class='twelve columns' type="text" ng-model="productID" placeholder="product ID">
+
+				<button class='twelve columns' >Edit Product</button>
+			</form>
+		</div>
+
+		<div class='twelve columns'>
+			
+			<select class='twelve columns'ng-model="Ctrl.editProduct.status">
+				<option value="" selected>Status</option>
+				<option value="active">Active</option>
+				<option value="inactive">Inactive</option>
+			</select>
+		</div>
+		<div class='twelve columns'>
+		<form ng-submit="Ctrl.saveProduct(Ctrl.editProduct.name,Ctrl.editProduct.description,Ctrl.editProduct.image,Ctrl.editProduct.price,Ctrl.editProduct.category,Ctrl.editProduct.quantity,Ctrl.editProduct.status)">
+			<button class='twelve columns'>Save Product</button>
+		</form>
+	</div>
+	</div>
+</div>

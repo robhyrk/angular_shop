@@ -1,0 +1,67 @@
+<!-- Jumbotron -->
+<div class="jumbotron">
+    <div class="jumbotron_cover">
+        <div class="container">
+            <div class="row">
+                <div class="twelve columns">
+                    <h1 class="text-center welcome">Essential Earth</h1></div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Content Block -->
+<section class="home">
+    <div class="container block">
+        <div class="twelve columns">
+            <div class="row">
+                <div class="seven columns">
+                    <h2>Our Mission</h2>
+                    <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."</div>
+                </div>
+                <div class="four columns offset-by-one column">
+                    <img src="css/images/mission.jpg" class="image"></div>
+            </div>
+        </div>
+    </div>
+    <!-- Products Listing -->
+    <div class="product-jumbotron">
+   
+        <div class="container">
+        
+            <div class="twelve columns">
+                <h2>Featured Products</h2>
+                <div class="row featured-products">
+                    <!-- <div class="four columns" ng-repeat="product in Ctrl.products | limitTo:3">
+                <div class="product-box">
+                <img src="css/images/balsam_fir.jpg"></div>
+                <div class="twelve columns text-center">
+                    <button ng-click="Ctrl.goToProduct(product)">{{product.name}}</button>
+                </div>
+                <div class="twelve columns text-center">{{product.description}}</div>
+            </div> -->
+            <ul>
+                    <li class='four columns' ng-repeat="product in Ctrl.products | limitTo:3">
+                        <div class="product-box" ng-click="Ctrl.goToProduct(product)">
+                            <div class="product" ng-class="{highlight: hover}" ng-mouseenter="hover = true" ng-mouseleave="hover = false">
+                                <h3>{{product.name}}</h3>
+                            </div>
+                            <img src="{{product.image}}">
+                        </div>
+                    </li>
+            </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="container block">
+        <div class="twelve columns">
+            <h2>From Our Blog</h2>
+            <div clas="row">
+                <div class="four columns text-center"> "This is some kind of random from a review on our website"</div>
+                <div class="four columns text-center"> "This is some kind of random from a review on our website"</div>
+                <div class="four columns text-center"> "This is some kind of random from a review on our website"</div>
+            </div>
+        </div>
+    </div>
+</section>

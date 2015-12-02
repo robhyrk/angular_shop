@@ -1,0 +1,30 @@
+<div class='row loginPage'>
+		
+		<div class="twelve columns">
+			<h1>
+				Login Page
+			</h1>
+			<form ng-submit="Ctrl.authenticate(user,password)">
+				<div class='row'>
+					<div class='three columns'>
+						<h2>Email:</h2>
+					</div>
+					<div class='nine columns'>
+						<input type="text" placeholder="Email" ng-model="user"></input>
+					</div>
+				</div>
+				<div class='row'>
+					<div class='three columns'>
+						<h2>Password:</h2>
+					</div>
+					<div class='nine columns'>
+						<input type="password" placeholder="Password" ng-model="password"></input>
+					</div>
+				</div>
+				
+				<button class="button twelve columns">Login</button>
+				
+			</form>
+		</div>
+
+</div>

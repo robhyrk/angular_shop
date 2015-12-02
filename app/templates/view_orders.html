@@ -1,0 +1,46 @@
+<!-- View Orders Header -->
+
+<div class="container">
+	<div class="row">
+		<h2 class="twelve columns block">Orders</h2>
+	</div>
+</div>
+
+<!-- Orders Details -->
+
+<div class="container">
+	<div class="row">
+			<table class="twelve columns u-full-width text-center">
+				<thead>
+					<tr>
+						<th>Order ID</th>
+						<th>Order Total</th>
+						<th>Product Details</th>
+					</tr>
+				</thead>
+				<tbody>
+    				<tr ng-repeat="order in Ctrl.orders">
+    					<td>{{order.orderId}}</td>
+        				<td>{{order.total | currency}}</td>
+        				<td>
+
+        					<table class="twelve columns u-full-width">
+        						<thead>
+        							<tr>
+        								<th>Product Name</th>
+        								<th>Order Quanity</th>
+        								<th>Product Price</th>
+        							</tr>
+		       						<tr ng-repeat="product in order.cart track by $index">
+		        						<td>{{product.name}}</td>
+		        						<td>{{product.orderQuantity}}</td>
+		        						<td>{{product.price}}</td>
+		        					</tr>
+		        			</table>
+        				</td>
+    				</tr>
+    			</tbody>
+			</table>
+		<div>
+	</div>
+</div>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Satisfy' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" type="text/css" href="css/vendor/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/vendor/skeleton.css">
+    <link rel="stylesheet" type="text/css" href="css/app.css">
+    <link rel="stylesheet" type="text/css" href="css/savio.css">
+	<title></title>
+	<!-- Angular Vendor Dependencies -->
+	<script type="text/javascript" src="js/vendor/angular.min.js"></script>
+	<script type="text/javascript" src="js/vendor/angular-route.min.js"></script>
+	<script type="text/javascript" src="js/vendor/angular-messages.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/lodash.js/2.4.1/lodash.min.js"></script>
+
+	<!-- App Code -->
+	<script type="text/javascript" src="app.js"></script>
+	<!-- Controllers -->
+	<script type="text/javascript" src="js/controllers/MainCtrl.js"></script>
+	<script type="text/javascript" src="js/controllers/AdminCtrl.js"></script>
+	<script type="text/javascript" src="js/controllers/AuthCtrl.js"></script>
+	<script type="text/javascript" src="js/controllers/ProductCtrl.js"></script>
+	<script type="text/javascript" src="js/controllers/CheckoutCtrl.js"></script>
+	<script type="text/javascript" src="js/controllers/ProductPageCtrl.js"></script>
+    <script type="text/javascript" src="js/controllers/ShopCtrl.js"></script>
+    <script type="text/javascript" src="js/controllers/ConfirmationCtrl.js"></script>
+    <script type="text/javascript" src="js/controllers/ViewOrdersCtrl.js"></script>
+
+    <!-- Services -->
+    <script type="text/javascript" src="js/services/ApiService.js"></script>
+    <script type="text/javascript" src="js/services/ProductService.js"></script>
+
+</head>
+
+<body ng-app="ShopApp">
+    <header>
+        <div class="top-header">
+            <div class="container">
+                <div class="row text-center">
+                <!-- Social Media Icons -->
+                    <div class="six columns">
+                        <ul class="social-media-icons">
+                            <li><a href="https://twitter.com/?lang=en"><img src="css/images/twitter-icon.png"></li>
+                            <li><a href="https://www.facebook.com/"><img src="css/images/facebook-icon.png"></a></li>
+                            <li><a href="https://instagram.com/"><img src="css/images/instagram-icon.png"></li>
+                        </ul>
+                    </div>
+                <!-- Checkout Panel -->   
+                    <div class="six columns">
+                        <ul>
+                        <!--     <li><a href="#/home">Cart</a></li>
+                            <li><a href="#/home">0.00$</a></li> -->
+                            <li><a href="#/checkout">View Cart</a></li>
+                            <li><a href="#/admin">Admin</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="mid-header">
+            <nav class="container">
+                <div class="row">
+                    <ul>
+
+                        <li class="one column offset-by-one column"><a href="#/home">About</a></li>
+                        <li class="one column"><a href="#/shop">Shop</a></li>
+                        <li class="one columns"><a href="#/home">Discover</a></li>
+                        <li class="three columns logo">
+                            <a href="#/home"><img src="css/images/logo.svg"></a></li>
+                        <li class="one column"><a href="#/home">FAQ</a></li>
+                        <li class="one column"><a href="#/home">Blog</a></li>
+                        <li class="one column"><a href="#/home">Contact</a></li>
+
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <section class="main">
+        <ng-view></ng-view>
+    </section>
+    <footer>
+        <div class='container'>
+            <div class="row text-center">
+                <div class='social-media six columns text-center'>
+                    <h3>Follow Us:</h3>
+                    <ul>
+                        <li><img src="css/images/instagram-icon.png"></li>
+                        <li><img src="css/images/twitter-icon.png"></li>
+                        <li><img src="css/images/facebook-icon.png"></li>
+                        <li><img src="css/images/youtube-icon.png"></li>
+                    </ul>
+                </div>
+                <div class='contact six columns text-center'>
+                    <h3>Contact</h3>
+                    <li>
+                        <span class='contact-label'>ADDRESS:</span>
+                        <span class='contact-data'>155 Carlton Street, M5A 2K5, Toronto, ON, Canada</span>
+                    </li>
+                    <li>
+                        <span class='contact-label'>TEL.:</span>
+                        <span class='contact-data'>(+1)416-859-5097</span>
+                    </li>
+                    <li>
+                        <span class='contact-label'>EMAIL:</span>
+                        <span class='contact-data'>info@essentialearth.com</span>
+                    </li>
+                </div>
+            </div>
+            <div class="copyright row">
+                <div class="twelve columns text-center">Copyright &copy 2015 Essential Earth. All rights reserved. Privacy Policy</div>
+            </div>
+    </footer>
+</body>
+
+</html>

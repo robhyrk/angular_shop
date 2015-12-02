@@ -1,0 +1,109 @@
+<div class='row confirmation'>
+	<div class='six offset-by-two columns'>	
+		<form novalidate name="frm">
+			<div>
+				<h1>Customer Billing</h1>
+			</div>
+			<div>
+				<div class='row'>
+					<div class='twelve columns'>
+						<div class='five columns'>
+							<h2>First Name:</h2>
+						</div>
+						<div class='seven columns'>
+							<input name="firstName" type="text" ng-model="Ctrl.form.firstName" placeholder="First Name" required></input>
+						    <span ng-messages="frm.firstName.$dirty && frm.firstName.$error">
+						      	<span ng-message="required">Required!</span>
+						    </span>
+						</div>
+					</div>
+				</div>
+		    </div>
+		    <div>
+				<div class='row'>
+			    	<div class='twelve columns'>
+						<div class='five columns'>
+							<h2>Last Name:</h2>
+						</div>
+						<div class='seven columns'>
+							<input name="lastName" type="text" ng-model="Ctrl.form.lastName" placeholder="Last Name" required></input>
+						    <span ng-messages="frm.lastName.$dirty && frm.lastName.$error">
+						      	<span ng-message="required">Required!</span>
+						    </span>
+						</div>
+					</div>
+				</div>
+		    </div>
+			<div>
+				<div class='row'>
+					<div class='twelve columns'>
+						<div class='five columns'>
+							<h2>Email:</h2>
+						</div>
+						<div class='seven columns'>
+							<input name="email" type="email" ng-model="Ctrl.form.email" placeholder="Email" ng-minlength="5" required></input>
+						    <span ng-messages="frm.email.$dirty && frm.email.$error">
+						      	<span ng-message="required">Required!</span>
+						       	<span ng-message="email">Not an Email</span>
+						        <span ng-message="minlength">Too Short!</span>
+						    </span>
+						</div>
+					</div>
+				</div>
+		    </div>
+		    <div>
+				<div class='row'>
+			    	<div class='twelve columns'>
+						<div class='five columns'>
+							<h2>Address:</h2>
+						</div>
+						<div class='seven columns'>
+							<input name="address" type="text" ng-model="Ctrl.form.address" placeholder="Address" required></input>
+						    <span ng-messages="frm.address.$dirty && frm.address.$error">
+						      	<span ng-message="required">Required!</span>
+						    </span>
+						</div>
+					</div>
+				</div>
+		    </div>
+		    <div>
+				<div class='row'>
+			    	<div class='twelve columns'>
+			    		
+						<div class='five columns'>
+							<h2>Credit Card Number:</h2>
+						</div>
+						<div class='seven columns'>
+							<input name="cardNum" type="text" ng-model="Ctrl.form.cardNumber" placeholder="Credit Card Number" ng-minlength="16" ng-maxlength="16" required></input>
+						    <span ng-messages="frm.cardNum.$dirty && frm.cardNum.$error">
+						      	<span ng-message="required">Required!</span>
+						      	<span ng-message="minlength">Too short!</span>
+						      	<span ng-message="maxlength">Too long!</span>
+						    </span>
+						</div>
+					</div>
+				</div>
+		    </div>
+		</form>
+	</div>
+
+	<div class='three columns orderConfirmation'>
+		<form>
+			<div>
+				<h1>Order Confirmation</h1>
+			</div>
+			<div>
+					<h2 id='total'>Total: {{Ctrl.sendCart.total | currency}}</h2>
+					<h2 id='tax'>Tax: {{Ctrl.sendCart.tax | currency}}</h2>
+					<h2 id='final_total'>Final Total: {{Ctrl.sendCart.final_total | currency}}</h2>
+			</div>
+		</form>
+	</div>
+	<div class='one columns'>
+	</div>
+</div>
+<div class='row confirmation'>
+	<div class='twelve columns'>
+		<button class="button" ng-click="Ctrl.sendOrder()">Checkout</button>
+	</div>
+</div>

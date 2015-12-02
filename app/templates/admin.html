@@ -1,0 +1,44 @@
+<div class='row adminPage'>
+	<div class='twelve columns'>
+		<h1>
+			Admin Page
+		</h1>
+	</div>
+	<div class="twelve columns">
+		<ul>
+			<li class='button four columns'><a href="/#/add_product">Add Product</a></li>
+			<li class='button four columns'><a href="/#/view_orders">View Orders</a></li>
+			<li class='button four columns'><a href="/#/edit_product">Edit Products</a></li>
+		</ul>
+	</div>
+	<!-- <div ng-repeat="product in Ctrl.products" class='productNaDes'>
+		<strong>{{product.name}}</strong>
+		<p>{{product.description}}</p>
+	</div> -->
+	<table class="u-full-width">
+				<thead>
+					<tr>
+						<th>Image</th>
+						<th>Name</th>
+						<th>Category</th>
+						<th>Quantity</th>
+						<th>Price</th>
+					</tr>
+				</thead>
+				<tbody>
+    				<tr ng-repeat="product in Ctrl.products" class='productsCtrlTxt'>
+    					<td><img class='productsCtrlImg' ng-src="{{product.image}}"></td>
+        				<td class='productsCtrlcentre'>{{product.name}}</td>
+        				<td class='productsCtrlcentre'>{{product.category}}</td> 
+        				<td class='productsCtrlcentre'>{{product.quantity}}</td>
+        				<td class='productsCtrlcentre'>{{product.price | currency: '$'}}</td>
+    				</tr>
+    			</tbody>
+			</table>
+</div>
+<div class="container">
+	<div class="row">
+			
+		<div>
+	</div>
+</div>
